@@ -1,0 +1,5 @@
+__pycache__/
+venv1/
+chat.py
+large_mixed_chat.txt
+generated_chat.txt
