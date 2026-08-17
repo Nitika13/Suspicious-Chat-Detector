@@ -1,6 +1,6 @@
 # Suspicious Chat Detector
 
-**Suspicious Chat Detector** is a machine learning-powered web application built with **Streamlit** that analyzes chat logs to detect suspicious or illegal content. The app uses pre-trained models to classify messages in chat logs (e.g., WhatsApp logs) and identify potentially harmful or inappropriate content.
+**Explain me complete project (I have an interview, so keep all the techincal details in the explanation)
 
 This project is intended to provide a simple way to check chat logs for illegal activities, making it useful for monitoring conversations and ensuring compliance with chat policies.
 
@@ -40,7 +40,7 @@ This project is intended to provide a simple way to check chat logs for illegal 
    - The app reads the uploaded WhatsApp chat file and removes unnecessary metadata, emojis, and special characters from messages.
 
 2. **Suspicious Content Detection**:
-   - The cleaned chat messages are transformed using a pre-trained vectorizer, and the resulting vectorized data is passed into a pre-trained machine learning model (`trained_model.pkl`) to predict if the messages are suspicious.
+   - The cleaned chat messages are transformed using a TF-IDF vectorizer, and the resulting weighted feature vectors are passed into a pre-trained machine learning model (`trained_model.pkl`) to predict whether the messages are suspicious.
 
 3. **Thresholding**:
    - If a certain percentage of the messages are classified as suspicious, the entire chat log is flagged as **Illegal**.
@@ -64,7 +64,7 @@ You can easily customize the app:
 
 - **Python**: Backend for data processing and machine learning.
 - **Streamlit**: Frontend for the interactive web application.
-- **Scikit-learn**: For model training and prediction.
+- **Scikit-learn**: For TF-IDF vectorization, model training, and prediction.
 - **Regex**: For text preprocessing (message extraction, cleaning).
 - **Pickle**: For serializing and loading trained models.
 
