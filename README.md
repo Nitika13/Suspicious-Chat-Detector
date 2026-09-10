@@ -24,6 +24,7 @@
 2. **Upload a Chat Log**:
 
    - Click on **Upload** in the sidebar and select a WhatsApp chat log exported as `.txt`.
+   - Each uploaded file must be no larger than **1 MB**.
    - The app will preprocess and clean the chat data.
 
 3. **View the Results**:
@@ -49,6 +50,15 @@
 ## Customization
 
 You can easily customize the app:
+
+The upload limit is configured in `.streamlit/config.toml`:
+
+```toml
+[server]
+maxUploadSize = 1
+```
+
+The value is specified in megabytes. Restart the Streamlit app after changing it.
 
 1. **Fine-Tune the Model**:
    - Replace the `trained_model.pkl` and `text_vectorizer.pkl` files with your own pre-trained models for better accuracy or to adapt it to a different dataset.
