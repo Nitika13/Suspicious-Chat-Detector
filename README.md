@@ -1,7 +1,6 @@
 # Suspicious Chat Detector
 
-**
-This project is intended to provide a simple way to check chat logs for illegal activities, making it useful for monitoring conversations and ensuring compliance with chat policies.
+**This project is intended to provide a simple way to check chat logs for illegal activities, making it useful for monitoring conversations and ensuring compliance with chat policies.
 
 ## Features
 
